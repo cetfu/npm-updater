@@ -51,13 +51,12 @@ func main() {
 
 		name := fields[0]
 		current := fields[1]
-		wanted := fields[2]
+		//wanted := fields[2]
 		latest := fields[3]
-		location := fields[4]
-		dependedBy := fields[5]
+		//location := fields[4]
+		//dependedBy := fields[5]
 
-		println(name, current, wanted, latest, location, dependedBy)
-		print("Do you want to update " + current + " to " + latest + "? y/n ")
+		print("Do you want to update " + name + " " + current + " to " + latest + "? y/n ")
 		for scanner.Scan() {
 			text := strings.ToLower(strings.TrimSpace(scanner.Text()))
 
